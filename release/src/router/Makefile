@@ -3865,6 +3865,7 @@ sysstat-10.0.3-install:
 	mv $(INSTALLDIR)/sysstat-10.0.3/etc $(INSTALLDIR)/sysstat-10.0.3/etc_sysstat
 	rm -rf $(INSTALLDIR)/sysstat-10.0.3/var
 
+
 #
 # Generic rules
 #

@@ -87,7 +87,7 @@ LIBS = -lpthread -ldl -lm \
 	$(TOP)/ffmpeg/libavcodec/libavcodec.a \
 	$(TOP)/ffmpeg/libavutil/libavutil.a
 else
-LIBS += -lpthread -lm -ldl -lvorbis -logg -lsqlite3 -lexif -ljpeg -lFLAC -lid3tag -lz -lavformat -lavcodec -lavutil
+LIBS += -lpthread -lid3tag -lm -ldl -lvorbis -logg -lsqlite3 -lexif -ljpeg -lFLAC -lz -lavformat -lavcodec -lavutil
 endif
 
 TESTUPNPDESCGENOBJS = testupnpdescgen.o upnpdescgen.o
@@ -117,7 +117,7 @@ install:	minidlna
 
 minidlna:	$(BASEOBJS) $(LNXOBJS)
 	@echo Linking $@
-	@$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(BASEOBJS) $(LNXOBJS) $(LIBS)
+	@$(CC) $(CFLAGS) $(LDFLAGS) $(LIBS) -o $@ $(BASEOBJS) $(LNXOBJS)
 
 
 testupnpdescgen:	$(TESTUPNPDESCGENOBJS)

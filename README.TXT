@@ -33,6 +33,7 @@ Set Up Environment(Tested in Fedora 8/9 and Ubuntu)
 		texinfo
 		dos2unix (or tofrodos)
 		xsltproc
+		gperf
 
 	b. Fedora
 		sudo yum groupinstall "Development Tools"

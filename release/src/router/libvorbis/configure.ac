@@ -7,6 +7,7 @@ dnl ------------------------------------------------
 
 AC_INIT([libvorbis],[1.2.3],[vorbis-dev@xiph.org])
 
+AC_CONFIG_MACRO_DIRS([m4])
 AC_CONFIG_SRCDIR([lib/mdct.c])
 
 AC_CANONICAL_TARGET([])
